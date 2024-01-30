@@ -478,8 +478,9 @@ rhel8cis_xwindows_required: false
 # 2.1.1 Time Synchronization - Either chrony or ntp
 rhel8cis_time_synchronization: chrony
 
-# 2.2.1.2 Time Synchronization servers - used in template file chrony.conf.j2
-# rhel8cis_time_synchronization_servers allows users to configure there custom group of rhel8cis_time_synchronization_servers.
+# 2.1.2 Time Synchronization servers - used in template file chrony.conf.j2
+# rhel8cis_time_synchronization_servers allows users to configure there custom group of
+# time synchronization servers in the remediation template in this playbook.
 rhel8cis_time_synchronization_servers:
     - 0.pool.ntp.org
     - 1.pool.ntp.org
